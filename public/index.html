@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FancyBox Image Gallery</title>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+
+	<!-- build:css css/combined.css -->
+	<link rel="stylesheet" href="bower_components/fancybox/source/jquery.fancybox.css">
+	<link rel="stylesheet" href="bower_components/fancybox/source/helpers/jquery.fancybox-buttons.css">
+	<link rel="stylesheet" href="bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.css">
+	<link rel="stylesheet" href="style.css">
+	<!-- endbuild -->
+</head>
+<body>
+	<header>
+		<h1><span class="fancy-text">FancyBox</span> Image Gallery</h1>		
+	</header>
+
+	<div class="container">
+		<aside>
+			<nav>
+				<ul>
+					<li><a class="filter active" data-rel="all" href="javascript:;">View All</a></li>
+					<li><a class="filter" data-rel="nature" href="javascript:;">Nature</a></li>
+					<li><a class="filter" data-rel="city" href="javascript:;">City</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<section>
+			<div class="gallery">
+				<a href="img/nature1.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="nature"><img src="img/nature1.jpg" alt="nature1"></a>
+				<a href="img/nature2.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="nature"><img src="img/nature2.jpg" alt="nature2"></a>
+				<a href="img/city1.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="city"><img src="img/city1.jpg" alt="city1"></a>
+				<a href="img/nature3.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="nature"><img src="img/nature3.jpg" alt="nature3"></a>
+				<a href="img/nature4.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="nature"><img src="img/nature4.jpg" alt="nature4"></a>
+				<a href="img/city2.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="city"><img src="img/city2.jpg" alt="city2"></a>
+				<a href="img/city3.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="city"><img src="img/city3.jpg" alt="city3"></a>
+				<a href="img/nature5.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="nature"><img src="img/nature5.jpg" alt="nature5"></a>
+				<a href="img/city4.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="city"><img src="img/city4.jpg" alt="city4"></a>
+				<a href="img/nature6.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="nature"><img src="img/nature6.jpg" alt="nature6"></a>
+				<a href="img/nature7.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="nature"><img src="img/nature7.jpg" alt="nature7"></a>
+				<a href="img/city5.jpeg" class="fancybox" data-fancybox-group="gallery" data-filter="city"><img src="img/city5.jpeg" alt="city5"></a>
+				<a href="img/city6.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="city"><img src="img/city6.jpg" alt="city6"></a>
+				<a href="img/city7.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="city"><img src="img/city7.jpg" alt="city7"></a>
+				<a href="img/nature8.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="nature"><img src="img/nature8.jpg" alt="nature8"></a>
+				<a href="img/city8.jpg" class="fancybox" data-fancybox-group="gallery" data-filter="city"><img src="img/city8.jpg" alt="city8"></a>
+			</div>
+		</section>
+	</div>
+
+	<!-- build:js js/combined.js -->
+	<script src="bower_components/fancybox/lib/jquery-1.9.0.min.js"></script>
+	<script src="bower_components/fancybox/source/jquery.fancybox.js"></script>
+	<script src="bower_components/fancybox/source/jquery.fancybox.pack.js"></script>
+	<script src="bower_components/fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script src="bower_components/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+	<script src="bower_components/fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+	<script src="script.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

@@ -1,0 +1,116 @@
+$primary: #1f2c36;
+$secondary: #f5f3ef;
+$tertiary: #D4D4D4; //not in use currently
+
+@mixin transition($x...) {
+	-webkit-transition: $x;
+	-moz-transition: $x;
+	transition: $x;
+}
+
+@mixin box-sizing($x) {
+	-webkit-box-sizing: $x;
+	-moz-box-sizing: $x;
+	box-sizing: $x;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto Slab', serif;
+	background: $secondary;
+	line-height: 1.5em;
+	color: #555;
+}
+
+header {
+	height: 130px;
+	background: $primary;
+	color: white;
+	margin-bottom: 20px;
+	text-align: center;
+	overflow: auto;
+}
+
+h1 {
+	margin-top: 50px;
+}
+
+.fancy-text {
+	color: #2F6288;
+	font-family: 'Oswald', sans-serif;
+}
+
+a {
+	color: $primary;
+	text-decoration: none;
+	font-family: 'Arial', sans-serif;
+}
+
+ul, li {
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+.container {
+	width: 80%;
+	max-width: 960px;
+	margin: auto;
+	overflow: auto;
+}
+
+aside, section {
+	padding: 20px;
+	overflow: auto;
+	@include box-sizing(border-box);
+}
+
+aside {
+	float: left;
+	width: 20%;
+}
+
+section {
+	float: right;
+	width: 80%;
+}
+
+.gallery img {
+	width: 23%;
+	opacity: 1;
+	@include transition(all 1s);
+	&:hover {
+		background: white;
+		opacity: 0.5;
+	}
+}
+
+nav a {
+	line-height: 2.2em;
+	padding: 10px 20px;
+	&.active {
+		background: $primary;
+		color: white;
+	}
+	&:hover {
+		background: #ccc;
+	}
+}
+
+@media(max-width: 990px) {
+	.container {
+		width: 95%;
+	}
+
+	section, aside {
+		float: none;
+		width: 100%;
+	}
+
+	.gallery img {
+		width: 49%;
+	}
+}
